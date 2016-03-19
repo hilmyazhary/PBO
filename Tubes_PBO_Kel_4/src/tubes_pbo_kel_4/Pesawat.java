@@ -23,10 +23,10 @@ public class Pesawat extends Kendaraan{
         tarif=(super.daftarHarga[0]*dewasa)+(super.daftarHarga[0]*lansia*0.75);
     }
     
-    public void tambahPenumpang(int jumlahPenumpang,Pemesan pm){
+    public void tambahPenumpang(Pemesan pm){
         sisaPenumpang=sisaPenumpang-(pm.getNPenumpang()+1);
     }
-    public void kurangPenumpang(int jumlahPenumpang,Pemesan pm){
+    public void kurangPenumpang(Pemesan pm){
         sisaPenumpang=sisaPenumpang+(pm.getNPenumpang()+1);
     }
     public boolean cekKuota(){

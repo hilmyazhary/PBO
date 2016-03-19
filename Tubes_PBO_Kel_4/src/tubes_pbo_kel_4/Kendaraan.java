@@ -60,7 +60,7 @@ abstract class Kendaraan {
         this.maxPenumpang = maxPenumpang;
     }
     
-    abstract public void tambahPenumpang(int jumlahPenumpang,Pemesan pm);
-    abstract public void kurangPenumpang(int jumlahPenumpang,Pemesan pm);
+    abstract public void tambahPenumpang(Pemesan pm);
+    abstract public void kurangPenumpang(Pemesan pm);
     abstract public boolean cekKuota();
 }
