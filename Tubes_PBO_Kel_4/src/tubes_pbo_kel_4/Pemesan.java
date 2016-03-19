@@ -18,9 +18,9 @@ public class Pemesan {
     private int nPenumpang=0;
     private int sisaPenumpang;
     
-    public Pemesan(int maxPenumpang){
-        this.sisaPenumpang=maxPenumpang;
-        p=new Penumpang[maxPenumpang];
+    public Pemesan(int sisaPenumpang){
+        this.sisaPenumpang=sisaPenumpang;
+        p=new Penumpang[sisaPenumpang];
     }
     public boolean login(String userName,String password){
         if((userName==this.userName)&&(password==this.password)){
@@ -38,7 +38,7 @@ public class Pemesan {
     public String getName(){
         return name;
     }
-    public String email(){
+    public String getEmail(){
         return email;
     }
     public Penumpang getPenumpang(int i){
