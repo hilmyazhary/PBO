@@ -9,7 +9,7 @@ import java.util.Date;
 abstract class Kendaraan {
     private String asal;
     private String tujuan;
-    private int[] daftarHarga = new int[3];
+    int[] daftarHarga = new int[2];
     private Date tanggal = new Date();
     private int jumlahPenumpang;
     private int maxPenumpang;
@@ -60,7 +60,7 @@ abstract class Kendaraan {
         this.maxPenumpang = maxPenumpang;
     }
     
-    abstract public void tambahPenumpang(int jumlahPenumpang);
-    abstract public void kurangPenumpang(int jumlahPenumpang);
+    abstract public void tambahPenumpang(int jumlahPenumpang,Pemesan pm);
+    abstract public void kurangPenumpang(int jumlahPenumpang,Pemesan pm);
     abstract public boolean cekKuota();
 }
